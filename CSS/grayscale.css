@@ -11,6 +11,7 @@ body {
     font-weight: 100;
     color: #4d4d4d;
     background-color: #fff;
+    background: url(../img/bg.png) repeat;
 }
 
 html {
@@ -33,14 +34,14 @@ h6 {
 
 p {
     margin: 0 0 25px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.5;
 }
 
 @media(min-width:768px) {
     p {
         margin: 0 0 35px;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 1.6;
     }
 }
@@ -55,7 +56,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1d9b6c;
+    color: #E25454;
 }
 
 .light {
@@ -67,7 +68,7 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #fff;
+    background-color: #313338;
 }
 
 .navbar-custom .navbar-brand {
@@ -90,7 +91,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #4d4d4d;
+    color: #00A99D;
 }
 
 .navbar-custom .nav li a {
@@ -101,7 +102,7 @@ a:focus {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255,255,255,.8);
+    color: #E25454;
     background-color: transparent;
 }
 
@@ -116,7 +117,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgba(255,255,255,.3);
+    color:#E25454;
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -137,7 +138,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #fff;
+        background: #313338;
     }
 }
 
@@ -375,4 +376,72 @@ body {
 
 .navbar-brand>img{
     height: 100%;
+}
+
+#about {
+    background: url(../img/bg-red.png) repeat;
+    width: 100%;
+    color: white;
+    padding-bottom: 100px;
+}
+
+#about a {
+    color:#FCB9B9;
+    cursor: pointer;
+}
+
+#about a:hover {
+    color:#F3D284;
+    cursor: pointer;
+}
+
+#about h2{
+    margin-bottom: 0;
+}
+
+@media(min-width:768px) {
+    #about .col-lg-8 {
+      width: 66.66666667%;
+    }
+}
+
+#asdesigner {
+    width:100%;
+    padding-bottom: 100px;
+}
+
+@media(min-width:768px) {
+    #asdesigner .col-lg-offset-2 {
+      margin-left: 3%;
+      padding-right: 200px;
+    }
+}
+
+#asdeveloper {
+    background: url(../img/bg-yellow.png) repeat;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+@media(min-width:768px) {
+    #asdeveloper .col-lg-offset-2 {
+        margin-left: 30%;
+        padding-left: 200px;
+    }
+}
+
+.navbar-toggle {
+    color:#00A99D;
+}
+
+@media(max-width:767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+.navbar-header a{
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 5px;
 }
