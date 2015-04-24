@@ -19,8 +19,6 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -69,46 +67,31 @@
     </nav>
 
     <!-- Intro Header -->
-<section id="section" class="light nopad-t nopad-b">
-
-            <div class="row">
-
-                <div class="col-12">
-                    
-                    <div id="face" class="face">
-
-                        <a href="/portfolio">
-                            <div id="designer" class="container content-section text-center">
-                                <div id="designer-desc" class="description">
-                                    <h1>designer</h1>
-                                    <p>UI/UX Designer with a passion for designing beautiful and functional user experiences. <span class="more">Minimalist who believes that less is more.</span></p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="/about">
-                            <div id="coder" class="container content-section text-center">
-                                <div id="coder-desc" class="description">
-                                    <h1>&lt;Developer&gt;</h1>
-                                    <p>Front End Developer who focuses on writing clean, elegant and efficient code. <span class="more">Love HTML, CSS, WordPress and a touch of jQuery.</span></p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <img id="face-img" class="face-img" src="http://www.adhamdannaway.com/wp-content/themes/ad/images/adham-dannaway-designer-coder.jpg" alt="adham dannaway ui designer">
-
-                        <div id="designer-img" class="designer-img"></div>
-                        <div id="coder-img" class="coder-img"></div>
-                        <div id="designer-bg" class="designer-bg"></div>
-                        <div id="coder-bg" class="coder-bg"></div>
-
+    <section id="intro" class="container content-section text-center">
+        <div class="row">
+                <div id="imagecontainers">
+                    <a id="designera" href="#1">
+                        <p><h2>Designer</h2>
+                            <p>UI/UX Designer with a passion for designing beautiful and functional user experiences.</p>
+                        </p>
+                    </a>
+                    <a id="codera" href="#2">
+                        <p><h2>&lt;coder&gt;</h2>
+                            <p>Front End Developer who focuses on writing clean, elegant and efficient code.</p>
+                        </p>
+                    </a>
+                    <div id="leftimg">
+                        <img id="realleftimg" src="img/bganimationleft.png" alt=""></img>
                     </div>
-
+                    <div id="rightimg">
+                        <img id="realrightimg" src="img/bganimationright.png" alt=""></img>
+                    </div>
                 </div>
+        </div>
+    </section>
 
-            </div>
+    <div id="clearfix"></div>
 
-        </section>
 
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
@@ -123,8 +106,14 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- designer Section -->
     <section id="asdesigner" class="container content-section text-center">
+        <!--<div id="video_container" style="overflow:hidden; background-size:cover;">
+            <video autoplay loop id="bgvid">
+                <source src="polina.webm" type="video/webm">
+                <source src="polina.mp4" type="video/mp4">
+            </video>
+        </div>-->
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>AS A DESIGNER</h2>
@@ -134,7 +123,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- developer Section -->
     <section id="asdeveloper" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
@@ -145,8 +134,7 @@
     </section>
 
     <!-- process Section -->
-    <section id="process">
-        <div class="container">
+    <section id="process" class="container content-section text-center">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">AS IT IS DONE</h2>
@@ -157,28 +145,28 @@
                     <span class="fa-stack fa-4x">
                             <img src="img/ico-plan.png" alt="iPlanIt" />
                         </span>
-                    <h4 class="service-heading">I PLAN IT</h4>
+                    <h4 class="process-heading">I PLAN IT</h4>
                     <p class="text-muted">I create sketches and documentation based on a deep analysis of your project.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                             <img src="img/ico-design.png" alt="iDesignIt" />
                         </span>
-                    <h4 class="service-heading">I DESIGN IT</h4>
+                    <h4 class="process-heading">I DESIGN IT</h4>
                     <p class="text-muted">Unic and Engaging designs, made for your specific needs and your product goals.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                             <img src="img/ico-test.png" alt="iTestIt" />
                         </span>
-                    <h4 class="service-heading">AS YOU WISH</h4>
+                    <h4 class="process-heading">AS YOU WISH</h4>
                     <p class="text-muted">I’m a technology and design geek with really high quality standards. What do you need more?</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                             <img src="img/ico-develop.png" alt="iDevelopIt" />
                         </span>
-                    <h4 class="service-heading">I DEVELOP IT</h4>
+                    <h4 class="process-heading">I DEVELOP IT</h4>
                     <p class="text-muted">Outstanding and unusual development to achieve the best performance and user experience.</p>
                 </div>
             </div>
@@ -193,8 +181,7 @@
                 <p>Currently i’m open to new interesting projects so feel free to contact me.</p>
                 <p>I would love to hear from you!</p>
 
-                <p><a href="mailto:rafaeltome@hotmail.com">rafaeltome@hotmail.com</a>
-                </p>
+                <p style= "margin-top: 15px; margin-bottom: 15px;"><a href="mailto:rafaeltome@hotmail.com" style= "font-size: 17px;"><i class="fa fa-envelope"></i> rafaeltome@hotmail.com</a> or <a href="tel:+351 914 484 388" style= "font-size: 17px;"><i class="fa fa-mobile"></i> +351 914 484 388</a></p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
                         <a href="https://behance.net/rafaeltome" class="btn btn-default btn-lg"><i class="fa fa-fw fa-behance"></i> <span class="network-name">behance</span></a>
@@ -236,6 +223,8 @@
     <script src="js/grayscale.js"></script>
 
     <script src="js/script.js"></script>
+
+    <script src="js/video.js"></script>
 
 </body>
 

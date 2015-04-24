@@ -176,3 +176,99 @@ function init() {
         icon: image
     });
 }
+
+//animar imagens
+
+$('#imagecontainers').bind('mousemove', function(e){
+    var midY = $('body').height() / 2;
+    var midX = $('body').width() / 2;
+    
+    var tr1 = 0, 
+        tr2 = 0;
+    
+    var maxP = 5,
+        trsP = 0;
+    
+    var op1 = 1,
+        op2 = 1;
+    
+    var x = e.pageX;
+    var perc = (x / (midX*2))*100;
+    
+    if (perc > 50) {
+        tr1 = perc;
+        trsP = -(perc-50);
+        op1 = 1-((perc-50)/50)
+    } else {
+        tr1 = perc;
+        trsP = 50-perc;
+        op2 = 1-(50-perc)/50
+    }
+    
+    setTimeout( function(){
+        $("#rightimg").css({
+            transition: "none",
+            width: tr1+'%'
+        });
+        $("#leftimg").css({
+            transition: "none",
+            width: (100-tr1)+"%"
+        });
+        $("#realrightimg").css({
+            transition: "none",
+            marginLeft: (x-midX*2)+"px"
+        });
+        $("#realleftimg").css({
+            transition: "none",
+            marginLeft: (-maxP)+trsP/10+"px"
+        });
+        $("#designera").css({
+            transition: "none",
+            width: (100-tr1)+"%",
+            opacity: op1
+        });
+        $("#codera").css({
+            transition: "none",
+            width: tr1+'%',
+            opacity: op2
+        });
+    }, 100);
+    
+    
+});
+
+$('#imagecontainers').on('mouseleave', function(e){
+    
+    var midX = $('body').width() / 2;
+
+    
+    setTimeout( function(){
+        $("#rightimg").css({
+            transition: "all .3s linear",
+            width: '50%'
+        });
+        $("#leftimg").css({
+            transition: "all .3s linear",
+            width: "50%"
+        });
+        $("#realrightimg").css({
+            transition: "all .3s linear",
+            marginLeft: (-midX)+"px"
+        });
+        $("#realleftimg").css({
+            transition: "all .3s linear",
+            marginLeft: "-5px"
+        });
+        $("#designera").css({
+            transition: "all .3s linear",
+            width: '50%',
+            opacity: 1
+        });
+        $("#codera").css({
+            transition: "all .3s linear",
+            width: '50%',
+            opacity: 1
+        });
+    }, 100);
+
+});

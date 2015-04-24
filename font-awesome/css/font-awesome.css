@@ -1670,3 +1670,7 @@
 .fa-meanpath:before {
   content: "\f20c";
 }
+
+#col-md-4 span img{
+    width:100%;
+}
