@@ -2,35 +2,27 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Rafael Tomé">
-
     <title>Rafael Tomé | Passionated Digital Creative Geek</title>
-
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -42,7 +34,6 @@
                     <img src="img/logo.png" alt="rafaelTome" />
                 </a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
@@ -65,34 +56,41 @@
         </div>
         <!-- /.container -->
     </nav>
-
     <!-- Intro Header -->
     <section id="intro" class="container content-section text-center">
         <div class="row">
-                <div id="imagecontainers">
-                    <a id="designera" href="#1">
-                        <p><h2>Designer</h2>
-                            <p>UI/UX Designer with a passion for designing beautiful and functional user experiences.</p>
-                        </p>
-                    </a>
-                    <a id="codera" href="#2">
-                        <p><h2>&lt;coder&gt;</h2>
-                            <p>Front End Developer who focuses on writing clean, elegant and efficient code.</p>
-                        </p>
-                    </a>
-                    <div id="leftimg">
-                        <img id="realleftimg" src="img/bganimationleft.png" alt=""></img>
-                    </div>
-                    <div id="rightimg">
-                        <img id="realrightimg" src="img/bganimationright.png" alt=""></img>
-                    </div>
+            <div id="imagecontainers">
+                <div id="bganimdescription" class="col-md-8 col-md-offset-2">
+                    <h2 style="margin-bottom: 15px">Passionated Digital <br>Creative Geek</h2>
+                    <span class="subtitle">Designing, creating, developing and delivering smart solutions!</span>
                 </div>
+                <a id="designera" class="page-scroll" href="#asdesigner">
+                    <div>
+                        <h2>Designer</h2>
+                        <p id="designerdesc">UI/UX Designer with a passion for designing beautiful and functional user experiences.</p>
+                    </div>
+                </a>
+                <a id="codera" class="page-scroll" href="#asdeveloper">
+                    <div>
+                        <h2>&lt;coder&gt;</h2>
+                        <p id="coderdesc">Front End Developer who focuses on writing clean, elegant and efficient code.</p>
+                    </div>
+                </a>
+                <div id="bgimage">
+                    <img id="realbgimage" src="img/bganimation.png" alt=""></img>
+                </div>
+            </div>
         </div>
     </section>
-
     <div id="clearfix"></div>
-
-
+    <section id="responsive" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Passionated Digital Creative Geek</h2>
+                <span class="subtitle">Designing, creating, developing and delivering smart solutions!</span>
+            </div>
+        </div>
+    </section>
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
         <div class="row">
@@ -105,15 +103,14 @@
             </div>
         </div>
     </section>
-
     <!-- designer Section -->
     <section id="asdesigner" class="container content-section text-center">
-        <!--<div id="video_container" style="overflow:hidden; background-size:cover;">
+        <div id="video_container" style="overflow:hidden; background-size:cover;">
             <video autoplay loop id="bgvid">
                 <source src="polina.webm" type="video/webm">
-                <source src="polina.mp4" type="video/mp4">
+                    <source src="bgdesigner.mp4" type="video/mp4">
             </video>
-        </div>-->
+        </div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>AS A DESIGNER</h2>
@@ -132,47 +129,45 @@
             </div>
         </div>
     </section>
-
     <!-- process Section -->
     <section id="process" class="container content-section text-center">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">AS IT IS DONE</h2>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                            <img src="img/ico-plan.png" alt="iPlanIt" />
-                        </span>
-                    <h4 class="process-heading">I PLAN IT</h4>
-                    <p class="text-muted">I create sketches and documentation based on a deep analysis of your project.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                            <img src="img/ico-design.png" alt="iDesignIt" />
-                        </span>
-                    <h4 class="process-heading">I DESIGN IT</h4>
-                    <p class="text-muted">Unic and Engaging designs, made for your specific needs and your product goals.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                            <img src="img/ico-test.png" alt="iTestIt" />
-                        </span>
-                    <h4 class="process-heading">AS YOU WISH</h4>
-                    <p class="text-muted">I’m a technology and design geek with really high quality standards. What do you need more?</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                            <img src="img/ico-develop.png" alt="iDevelopIt" />
-                        </span>
-                    <h4 class="process-heading">I DEVELOP IT</h4>
-                    <p class="text-muted">Outstanding and unusual development to achieve the best performance and user experience.</p>
-                </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">AS IT IS DONE</h2>
             </div>
         </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                            <img src="img/ico-plan.png" alt="iPlanIt" />
+                        </span>
+                <h4 class="process-heading">I PLAN IT</h4>
+                <p class="text-muted">I create sketches and documentation based on a deep analysis of your project.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                            <img src="img/ico-design.png" alt="iDesignIt" />
+                        </span>
+                <h4 class="process-heading">I DESIGN IT</h4>
+                <p class="text-muted">Unic and Engaging designs, made for your specific needs and your product goals.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                            <img src="img/ico-test.png" alt="iTestIt" />
+                        </span>
+                <h4 class="process-heading">AS YOU WISH</h4>
+                <p class="text-muted">I’m a technology and design geek with really high quality standards. What do you need more?</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                            <img src="img/ico-develop.png" alt="iDevelopIt" />
+                        </span>
+                <h4 class="process-heading">I DEVELOP IT</h4>
+                <p class="text-muted">Outstanding and unusual development to achieve the best performance and user experience.</p>
+            </div>
+        </div>
+        </div>
     </section>
-
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
         <div class="row">
@@ -180,8 +175,7 @@
                 <h2>AS YOU WISH</h2>
                 <p>Currently i’m open to new interesting projects so feel free to contact me.</p>
                 <p>I would love to hear from you!</p>
-
-                <p style= "margin-top: 15px; margin-bottom: 15px;"><a href="mailto:rafaeltome@hotmail.com" style= "font-size: 17px;"><i class="fa fa-envelope"></i> rafaeltome@hotmail.com</a> or <a href="tel:+351 914 484 388" style= "font-size: 17px;"><i class="fa fa-mobile"></i> +351 914 484 388</a></p>
+                <p style="margin-top: 15px; margin-bottom: 15px;"><a href="mailto:rafaeltome@hotmail.com" style="font-size: 17px;"><i class="fa fa-envelope"></i> rafaeltome@hotmail.com</a> or <a href="tel:+351 914 484 388" style="font-size: 17px;"><i class="fa fa-mobile"></i> +351 914 484 388</a></p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
                         <a href="https://behance.net/rafaeltome" class="btn btn-default btn-lg"><i class="fa fa-fw fa-behance"></i> <span class="network-name">behance</span></a>
@@ -196,36 +190,26 @@
             </div>
         </div>
     </section>
-
     <!-- Map Section -->
     <div id="map"></div>
-
     <!-- Footer -->
     <footer>
         <div class="container text-center">
             <p>Copyright 2015 &copy; Rafael Tomé - PDCG</p>
         </div>
     </footer>
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
-
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
-
     <script src="js/script.js"></script>
-
     <script src="js/video.js"></script>
-
 </body>
 
 </html>
