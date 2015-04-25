@@ -481,9 +481,12 @@ body {
 }
 /*----developer----*/
 #asdeveloper {
+    position:relative;
     background: url(../img/bg-yellow.png) repeat;
     width: 100%;
     padding-bottom: 100px;
+    z-index: -99999;
+
 }
 
 @media(min-width:768px) {
@@ -766,6 +769,7 @@ body {
 
     #asdeveloper {
         background: url(./img/bg-yellow.png) repeat !important;
+        z-index: -200;
     }
     
     .navbar-brand{
