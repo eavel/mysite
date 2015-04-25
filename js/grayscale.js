@@ -5,13 +5,7 @@
  */
 
 // jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
-});
+
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
@@ -41,7 +35,7 @@ function init() {
         zoom: 15,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+        center: new google.maps.LatLng(40.5357122, -8.6954944), // New York
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
@@ -169,7 +163,7 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
+    var myLatLng = new google.maps.LatLng(40.5357122, -8.6954944);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
@@ -291,6 +285,15 @@ jQuery(document).ready(function($) {
         $('#responsive').hide();
 
     }
+
+    $(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+    });
+
 });
 
 $(window).resize(function(event) {
@@ -322,3 +325,12 @@ $(window).resize(function() {
     }
 
 });
+
+//loader
+
+
+    $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+    });
+
